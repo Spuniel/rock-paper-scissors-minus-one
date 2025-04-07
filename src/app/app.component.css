@@ -2,12 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 98vh;
     background-color: #1e1e24; /* ciemne tło */
-    
   }
-  
-
 
   .buttons{
     display: flex;
@@ -17,8 +14,18 @@
 
   .buttons button{
     margin: 50px 50px 50px 50px;
-    width: 90px;
-    height: 90px;
+    width: 91px;
+    height: 91px;
+  }
+
+  .buttons img{
+    margin: 30px 50px 30px 50px;
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: white 1px solid;
   }
  
   

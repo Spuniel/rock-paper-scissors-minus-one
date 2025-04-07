@@ -2,30 +2,30 @@
 <div class="container">
   <!-- Left Buttons -->
   <div class="buttons">
-    <button>asd</button>
-    <button>asd</button>
-    <button>asd</button>
+    <img src="leftRockPlayer.png" (click)="leftRockClick()" class="leftRock">
+    <img src="leftPaperPlayer.png" (click)="leftPaperClick()" class="leftPaper">
+    <img src="leftScissorsPlayer.png" (click)="leftScissorsClick()" class="leftScissors">
   </div>
 
   <!-- Hands Section -->
   <div class="hands-section">
     <div class="hands-row">
-      <img src="rightPaperOpponent.png" class="hand-img" alt="Right Opponent">
-      <img src="leftPaperOpponent.png" class="hand-img" alt="Left Opponent">
+      <img [src]="opponentRightHand" class="hand-img" alt="Right Opponent">
+      <img [src]="opponentLeftHand" class="hand-img" alt="Left Opponent">
     </div>
 
-    <label class="win-label">WIN</label>
+    <label class="win-label"> {{ labelText }}</label>
 
     <div class="hands-row">
-      <img src="leftPaperPlayer.png" class="hand-img" alt="Left Player">
-      <img src="rightPaperPlayer.png" class="hand-img" alt="Right Player">
+      <img [src]="playerLeftHand" class="hand-img" alt="Left Player">
+      <img [src]="playerRightHand" class="hand-img" alt="Right Player">
     </div>
   </div>
 
   <!-- Right Buttons -->
   <div class="buttons">
-    <button>asd</button>
-    <button>asd</button>
-    <button>asd</button>
+    <img src="rightRockPlayer.png"  (click)="rightRockClick()" class="rightRock">
+    <img src="rightPaperPlayer.png" (click)="rightPaperClick()" class="rightPaper">
+    <img src="rightScissorsPlayer.png" (click)="rightScissorsClick()" class="rightScissors">
   </div>
 </div>
