@@ -10,15 +10,15 @@
   <!-- Hands Section -->
   <div class="hands-section">
     <div class="hands-row">
-      <img [src]="opponentRightHand" class="hand-img" alt="Right Opponent">
-      <img [src]="opponentLeftHand" class="hand-img" alt="Left Opponent">
+      <img [src]="opponentRightHand" class="hand-img" alt="Right Opponent" [style.visibility]="opponentRightVisible ? 'visible' : 'hidden'">
+      <img [src]="opponentLeftHand" class="hand-img" alt="Left Opponent" [style.visibility]="opponentLeftVisible ? 'visible' : 'hidden'">
     </div>
 
-    <label class="win-label"> {{ labelText }}</label>
+    <label class="win-label" (click)="reset()"> {{ labelText }}</label>
 
     <div class="hands-row">
-      <img [src]="playerLeftHand" class="hand-img" alt="Left Player">
-      <img [src]="playerRightHand" class="hand-img" alt="Right Player">
+      <img [src]="playerLeftHand" class="hand-img player" (click)="handChooser($event)" alt="Left Player" [style.visibility]="playerLeftVisible ? 'visible' : 'hidden'">
+      <img [src]="playerRightHand" class="hand-img player" (click)="handChooser($event)" alt="Right Player" [style.visibility]="playerRightVisible ? 'visible' : 'hidden'">
     </div>
   </div>
 
